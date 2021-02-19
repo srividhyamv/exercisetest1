@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Transport Booking</title>
+    <style>
+
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+div {background-color: rgb(142, 159, 206);}
+ 
+    .content {
+  max-width: 500px;
+  margin: auto;
+}
+    </style>
+   
+
+</head>
+
+<body>
+    <div>
+
+  
+
+        <div class="content">
+            <label>Name :</label>
+            <input type="text" name="srividya">
+        </div>
+
+        <br>
+        <div>
+            <label>Phone Number:</label>
+            <input type="text" name="qualification">
+        </div>
+
+        <br>
+        <div>
+            <label>Email :</label>
+            <input type="text" name="Email">
+        </div>
+
+        <br>
+        <div>
+            <label>Taxi Type :</label>
+            <input type="radio" name="vehicle" value="Car"> Car
+            <input type="radio" name="vehicle" value="Van"> Van
+            <input type="radio" name="vehicle" value="Tuk Tuk">Tuk Tuk
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="babyseat" value="Baby seat"> Baby seat
+            <input type="checkbox" name="wheelchair Access" value="Wheelchair Access">Wheelchair Access
+            <input type="checkbox" name="stockTip" value="Stock Tip">Stock Tip
+        </div>
+        <br>
+        <div>
+            <label>Pickup Date </label>
+            <input type="datetime">
+            <br><br>
+            <label>Pickup Time </label>
+            <input list="Time">
+
+            <datalist id="Time">
+                <option value="12">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label>Pickup Place</label>
+
+            <input list="pickup place">
+
+            <datalist id="pickup place">
+                <option value="New orleans">
+                <option value="Dallas">
+                <option value="SA">
+                <option value="Houston">
+                <option value="Austin">
+            </datalist>
+        </div>
+
+        <br>
+        <div>
+            <label>Dropoff place</label>
+            <input type="text" name="Dropoff place">
+        </div>
+
+        <br>
+        <div>
+            <label>Special Instructions</label>
+            <input type="text" name="Special Instructions">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+
+</html>
