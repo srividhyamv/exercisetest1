@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrap {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .fleft {
+        float: left;
+        width: 50%;
+        background: rgba(119, 153, 207, 0.815);
+        height: 300px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .ltable {
+
+        float: right;
+        margin-right: 30%;
+
+
+    }
+
+    .rtable {
+        float: right;
+        margin-right: 50%;
+
+    }
+
+    .fright {
+        float: right;
+        background: rgba(119, 153, 207, 0.815);
+        height: 300px;
+        width: 48%;
+        margin-left: 20px;
+    }
+</style>
+
+<script>
+    function submitForm() {
+        document.getElementById('rfname').innerHTML = document.getElementById('fname').value;
+
+        document.getElementById('rlname').innerHTML = document.getElementById('lname').value;
+
+        document.getElementById('rssn').innerHTML = document.getElementById('ssn').value;
+
+        document.getElementById('raddress').innerHTML = document.getElementById('address').value;
+
+        document.getElementById('rcity').innerHTML = document.getElementById('city').value;
+
+        document.getElementById('rstate').innerHTML = document.getElementById('state').value;
+
+        document.getElementById('rphone').innerHTML = document.getElementById('phone').value;
+
+        document.getElementById('remail').innerHTML = document.getElementById('email').value;
+
+
+        var ssn = document.getElementById('ssn').value
+
+        var length = ssn.length;
+
+        var lastNumber = ssn[length - 1];
+
+        alert(lastNumber);
+
+        if (lastNumber % 2 == 0)
+            alert('fail');
+        else
+            alert('pass');
+        return false;
+    }
+
+</script>
+
+<body>
+    <form>
+
+        <div class="fleft">
+            <div class="ltable">
+                <table>
+                    <tr>
+                        <td>
+                            <label>First Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="fname" id="fname">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Last Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="lname" id="lname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>SSN:</label>
+                        </td>
+                        <td>
+                            <input type="number" name="ssn" id="ssn">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Address:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="address" id="address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>City:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="city" id="city">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>State:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="state" id="state">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone:</label>
+                        </td>
+                        <td>
+                            <input type="number" name="phone" id="phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email</label>
+                        </td>
+                        <td>
+                            <input type="text" name="email" id="email">
+                        </td>
+                    </tr>
+                </table>
+                <button class="btn" type="submit" onclick="return submitForm()"> Verify</button>
+            </div>
+        </div>
+
+        <div class="fright">
+            <div class="rtable">
+                <table>
+                    <tr>
+                        <td>
+                            <label>First Name:</label>
+                        </td>
+                        <td>
+                            <label name="rfname" id="rfname"></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Last Name:</label>
+                        </td>
+                        <td>
+                            <label name="rlname" id="rlname"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>SSN:</label>
+                        </td>
+                        <td>
+                            <label number="rssn" id="rssn"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Address:</label>
+                        </td>
+                        <td>
+                            <label name="raddress" id="raddress"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>City:</label>
+                        </td>
+                        <td>
+                            <label name="rcity" id="rcity"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>State:</label>
+                        </td>
+                        <td>
+                            <label name="rstate" id="rstate"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone:</label>
+                        </td>
+                        <td>
+                            <label number="rphone" id="rphone"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email</label>
+                        </td>
+                        <td>
+                            <label name="remail" id="remail"></label>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -3,23 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"content=" IE=edge"> 
+    <meta http-equiv="X-UA-Compatible" content=" IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    
+
     <title>Document</title>
 </head>
 <style>
-   * {
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+    }
+    * {
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
 
     }
     .flex-container{
+        background-color: grey;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
         justify-content: space-evenly;
-        height: 400px;
+        height: 70vh;
     }
     .item{
         background: #f4f4f4;
@@ -29,28 +37,25 @@
         text-align: center;
         border-radius: 5px;
         height: 50px;
+        width: 200px;
+        flex: 1 0;
     }
     .item-1{
         flex-grow: 1;
     }
     .item-2 {
-        flex-shrink: 0;
+        flex-shrink: 1;
     }
-
 </style>
-
 <body>
-    <div class="'flex-container">
-        <div class=" item-1 item">
-        item 1
-        </div>
-        <div class="item-2 item">
-            item 2
-        </div>
-        <div class="item-3 item">
-            item 3
-        </div>
-    </div>
 
+
+<div id="flextest"class="flex-container">
+    <div id="item-1" class="item item-1">item 1 </div>
+    <div id="item-1" class="item item-2">item 2 </div>
+    <div id="item-1" class="item item-3">item 3 </div>
+    <div id="item-1" class="item item-4">item 4 </div>
+
+</div>
 </body>
 </html>

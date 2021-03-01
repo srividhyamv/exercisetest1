@@ -1,0 +1,20 @@
+Names
+Ram,Antony,Joe,sri
+
+var name="sri'
+var Names='[Ram','Antony','Joe','sri']
+var names1 =['ram','Antony']
+var names2 =['joe','sri']
+var number =10;
+var numbers =[1,2,3, 100]
+
+var x='First'
+var y ="Last'
+console log(x+y) 
+
+if(value1 > value2){
+    console.log('yes')
+
+} else {
+    console.log('no')
+}

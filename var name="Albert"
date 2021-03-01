@@ -1,0 +1,5 @@
+var name="Albert"
+var count= 0;
+var flag = true // 0 or 1
+var x =null
+var y = undefined
